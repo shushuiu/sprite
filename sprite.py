@@ -27,7 +27,9 @@ def createSprite(r):
             r2.append({'w': w, 'h': h, 'p': i})
 
     sampleArr = sortByHeight(r)
+    # 最大画布高度
     MaxHeightReact = sampleArr[0]['h']
+    # 最大画布宽度
     MaxWeightReact = sampleArr[0]['w']
 
     return None

@@ -13,13 +13,10 @@ h:图片高度
 '''
 
 # 生成雪碧图片和css，放在哪里的路径
-spritePath = '/Users/waston/Downloads/demo/'
+spritePath = '/Users/waston/PycharmProjects/sprite/publish'
 
 # 需要合成雪碧图片的小图片路径
-imagesPath = '/Users/waston/Downloads/tree/'
-
-# 默认纯黑壁纸图片路径
-blackImagesPath = '/Users/waston/Downloads/雪碧.jpeg'
+imagesPath = '/Users/waston/PycharmProjects/sprite/pic'
 
 # class 前缀
 prefix = 'review'
