@@ -50,10 +50,10 @@ def createSprite(r):
         elif n == 10:
             x = 0
             y = 72
-        elif n % 10 == 0:
+        elif n % 10 == 9:
             i = n // 10
             x = 972
-            y = (i + 1) * 72
+            y = i * 72
         else:
             i = n % 10
             x = i * 108
