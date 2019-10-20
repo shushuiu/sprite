@@ -13,10 +13,10 @@ h:图片高度
 '''
 
 # 生成雪碧图片和css，放在哪里的路径
-spritePath = '/Users/waston/PycharmProjects/sprite/publish'
+spritePath = '/Users/watson/PycharmProjects/sprite/publish/'
 
 # 需要合成雪碧图片的小图片路径
-imagesPath = '/Users/waston/PycharmProjects/sprite/pic'
+imagesPath = '/Users/watson/PycharmProjects/sprite/pic/'
 
 # class 前缀
 prefix = 'review'
@@ -31,7 +31,7 @@ now = datetime.datetime.now()
 d1 = '%d-' % int(random.random() * 10000)
 d2 = '%d-%d-%d' % (now.year, now.month, now.day)
 
-spriteName = prefix + classSign + d1 + d2 + '.jpg'
+spriteName = prefix + classSign + d1 + d2 + '.png'
 
 sizeList = []
 imgList = []
@@ -61,7 +61,7 @@ for v in r:
     p = v['p']
     img = imgList[p]
     # 原本图片大小缩放十倍
-    img = img.resize((width/10, height/10), Image.ANTIALIAS)
+    img = img.resize((width // 10, height // 10), Image.ANTIALIAS)
     x = v['x']
     y = v['y']
     canvas.paste(img, (x, y))
